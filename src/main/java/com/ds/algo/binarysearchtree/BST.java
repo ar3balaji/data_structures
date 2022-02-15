@@ -3,10 +3,12 @@ package com.ds.algo.binarysearchtree;
 import com.ds.algo.binarytree.Node;
 
 public class BST {
+	
 	private Node root;
 
 	public void display() {
 		System.out.println("Binary search tree contents!");
+		
 		if (root == null) {
 			System.out.println("Binary search tree is empty");
 			return;
@@ -25,7 +27,6 @@ public class BST {
 	}
 
 	public void insert(int key) {
-
 		if (root == null) {
 			root = new Node(key, null, null);
 		} else {
@@ -50,7 +51,6 @@ public class BST {
 				parent.setRight(new Node(key, null, null));
 			}
 		}
-
 	}
 
 	public Node search(int key) {

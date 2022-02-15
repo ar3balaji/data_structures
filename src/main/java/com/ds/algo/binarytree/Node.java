@@ -1,8 +1,11 @@
 package com.ds.algo.binarytree;
 
 public class Node {
+	
 	int key;
+	
 	Node left;
+	
 	Node right;
 	
 	public Node (int key, Node left, Node right) {
